@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitConnect - Certified Fitness Trainers</title>
+  <meta name="description" content="Book personalized 1-on-1 sessions with certified fitness trainers. Explore popular workout plans and start your fitness journey today.">
+  <link rel="stylesheet" href="styles/utilities.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Navigation Bar (Sticky Header) -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">FitConnect <span>💪</span></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="#workouts" class="nav-link">Workouts</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><button class="btn btn-primary">Book Session</button></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section with CTA -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Transform Your Body With Expert Trainers</h1>
+      <p>Get personalized 1-on-1 training sessions</p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary">Find Your Trainer</button>
+        <button class="btn btn-secondary">View Plans</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section class="trainers" id="trainers">
+    <div class="container">
+      <h2>Meet Our Certified Trainers</h2>
+      <div class="trainer-grid">
+        <!-- Trainer Card 1 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer1.jpg" alt="Trainer Alex Johnson">
+            <span class="badge">Online Available</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Alex Johnson</h3>
+            <p class="specialty">Strength Training</p>
+            <div class="rating">★★★★☆ (4.2)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Alex Johnson">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Trainer Card 2 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer2.jpg" alt="Trainer Emily Davis">
+            <span class="badge">Online Available</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Emily Davis</h3>
+            <p class="specialty">Yoga & Flexibility</p>
+            <div class="rating">★★★★★ (4.9)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Emily Davis">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Trainer Card 3 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer3.jpg" alt="Trainer Marcus Thompson">
+            <span class="badge">In-Person Only</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Marcus Thompson</h3>
+            <p class="specialty">Cardio & HIIT</p>
+            <div class="rating">★★★★☆ (4.5)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Marcus Thompson">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Trainer Card 4 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer4.jpg" alt="Trainer Sarah Jenkins">
+            <span class="badge">Online Available</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Sarah Jenkins</h3>
+            <p class="specialty">Pilates & Posture</p>
+            <div class="rating">★★★★★ (4.8)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Sarah Jenkins">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Trainer Card 5 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer5.jpg" alt="Trainer Michael Chen">
+            <span class="badge">Online Available</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Michael Chen</h3>
+            <p class="specialty">Weight Loss Coaching</p>
+            <div class="rating">★★★★☆ (4.3)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Michael Chen">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Trainer Card 6 -->
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <img src="images/trainer6.jpg" alt="Trainer Jessica Rodriguez">
+            <span class="badge">In-Person Only</span>
+          </div>
+          <div class="trainer-info">
+            <h3>Jessica Rodriguez</h3>
+            <p class="specialty">Athletic Conditioning</p>
+            <div class="rating">★★★★★ (4.7)</div>
+            <button class="btn btn-outline book-btn" data-trainer="Jessica Rodriguez">View Schedule</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workout Plans Section -->
+  <section class="workouts" id="workouts">
+    <div class="container">
+      <h2>Popular Workout Plans</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beginner">Beginner</button>
+        <button class="filter-btn" data-filter="advanced">Advanced</button>
+      </div>
+      <div class="workout-plans">
+        <!-- Plan cards will be populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section (Basic style as required by nav link) -->
+  <section class="pricing" id="pricing" style="background-color: #f7fafc;">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">Affordable Pricing Plans</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Standard Card -->
+        <div style="background: #ffffff; padding: 2rem; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Single Session</h3>
+          <div style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #111111;">$49<span style="font-size: 1rem; font-weight: 400; color: #718096;"> / session</span></div>
+          <ul style="list-style: none; text-align: left; margin-bottom: 2rem; color: #4a5568; line-height: 2;">
+            <li>✓ 1-on-1 Personalized Session</li>
+            <li>✓ Customized Workout Routine</li>
+            <li>✓ Diet Guidance Checklist</li>
+            <li>✗ Direct Chat Support</li>
+          </ul>
+          <button class="btn btn-outline book-btn" style="width: 100%;">Book Single</button>
+        </div>
+
+        <!-- Premium Card -->
+        <div style="background: #ffffff; padding: 2rem; border: 2px solid #0070f3; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); position: relative;">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background-color: #0070f3; color: #ffffff; padding: 0.25rem 1rem; font-size: 0.75rem; font-weight: 700; border-radius: 9999px; text-transform: uppercase;">Best Value</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Monthly Pass</h3>
+          <div style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; color: #111111;">$199<span style="font-size: 1rem; font-weight: 400; color: #718096;"> / month</span></div>
+          <ul style="list-style: none; text-align: left; margin-bottom: 2rem; color: #4a5568; line-height: 2;">
+            <li>✓ 5 Sessions per month</li>
+            <li>✓ Customized Workout & Diet plan</li>
+            <li>✓ 24/7 Trainer Chat Support</li>
+            <li>✓ Progress tracking portal</li>
+          </ul>
+          <button class="btn btn-primary book-btn" style="width: 100%;">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="booking-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Book Your Session</h2>
+      <form>
+        <div class="form-group">
+          <label>Select Trainer</label>
+          <select required>
+            <option value="">-- Select Trainer --</option>
+            <option value="Alex Johnson">Alex Johnson (Strength Training)</option>
+            <option value="Emily Davis">Emily Davis (Yoga & Flexibility)</option>
+            <option value="Marcus Thompson">Marcus Thompson (Cardio & HIIT)</option>
+            <option value="Sarah Jenkins">Sarah Jenkins (Pilates & Posture)</option>
+            <option value="Michael Chen">Michael Chen (Weight Loss Coaching)</option>
+            <option value="Jessica Rodriguez">Jessica Rodriguez (Athletic Conditioning)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Select Date</label>
+          <input type="date" id="session-date" required>
+        </div>
+
+        <div class="form-group">
+          <label>Available Times</label>
+          <div class="time-slots">
+            <button type="button" class="time-btn" data-time="9:00 AM">9:00 AM</button>
+            <button type="button" class="time-btn" data-time="10:30 AM">10:30 AM</button>
+            <button type="button" class="time-btn" data-time="12:00 PM">12:00 PM</button>
+            <button type="button" class="time-btn" data-time="2:30 PM">2:30 PM</button>
+            <button type="button" class="time-btn" data-time="4:00 PM">4:00 PM</button>
+            <button type="button" class="time-btn" data-time="5:30 PM">5:30 PM</button>
+          </div>
+          <input type="hidden" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary confirm-btn">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
